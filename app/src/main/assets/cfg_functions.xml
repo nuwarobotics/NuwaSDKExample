@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ActivityList>
+    <Label name="motor.MotorControlActivity">[Motor] Motor control Example</Label>
+    <Label name="motor.MovementControlActivity">[Motor] Movement control Example</Label>
+
+    <!--<Label name="motion.MotionSDKExampleActivity">Motion SDK Example</Label>-->
+    <Label name="motion.demo.QueryMotionActivity">[Motion] Query Motion List Example</Label>
+    <Label name="motion.demo.PlayMotionActivity">[Motion] Motion Play Example</Label>
+    <Label name="motion.demo.ControlMotionActivity">[Motion] Motion Play/Pause/Resume Control Example</Label>
+    <Label name="motion.demo.WindowControlWithMotionActivity">[Motion] Motion Play with window view control Example</Label>
+    <Label name="motion.MotionTtsExampleActivity">[Motion] Motion with TTS Example</Label>
+
+    <Label name="led.LEDExampleActivity">[HW] LED Control Example</Label>
+    <Label name="sensor.SensorExampleActivity">[HW] Sensor Detect Example</Label>
+    <!-- Voice Example-->
+    <Label name="voice.WakeupActivity">[Voice] Wakeup Example</Label>
+    <Label name="voice.LocalcmdActivity">[Voice] Local command Example</Label>
+    <Label name="voice.CloudASRActivity">[Voice] Cloud ASR Example</Label>
+    <Label name="voice.LocalcmdAndCloudASRActivity">[Voice] Local command and Cloud ASR Example</Label>
+    <Label name="voice.TTSActivity">[Voice] TTS Example</Label>
+</ActivityList>

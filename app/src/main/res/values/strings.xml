@@ -1,0 +1,78 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Nuwa SDK API Demo</string>
+
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+    <string name="permission_contacts_rationale">Contacts permissions are needed to demonstrate access.</string>
+
+    <string name="permission_read_phone_hint">Contacts permissions are needed to demonstrate access. PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_read_external_hint">Contacts permissions are needed to demonstrate access. PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_write_external_hint">Contacts permissions are needed to demonstrate access. PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">Contacts permissions are needed to demonstrate access. PERMISSION_RECORD_AUDIO</string>
+    <string name="permission_read_contacts_hint">Contacts permissions are needed to demonstrate access. PERMISSION_READ_CONTACTS</string>
+
+
+    <string name="title_step_1">"Step 1 : Disable System LED Control"</string>
+    <string name="title_step_2">"Step 2 : Setup Color (R/G/B)"</string>
+    <string name="title_step_3">"Step 3 : Control LED"</string>
+    <string name="title_step_4">"Step 4 : Enable System LED Control"</string>
+
+
+    <!-- LEDExampleActivity -->
+    <string name="title_example_led">LED Control Example</string>
+    <string name="edit_default_color_R">"255"</string>
+    <string name="edit_default_color_G">"0"</string>
+    <string name="edit_default_color_B">"0"</string>
+    <string name="btn_led_face">"Face"</string>
+    <string name="btn_led_body_center">"Body"</string>
+    <string name="btn_led_hand_left">"Left Hand"</string>
+    <string name="btn_led_hand_right">"Right Hand"</string>
+    <string name="btn_stop_system">"Disable System Control LED"</string>
+    <string name="btn_return_system" >"Return System Control LED"</string>
+
+
+    <!-- Motor Control -->
+    <string name="motor_list_title" >"Motor List"</string>
+
+    <!-- Movement Control -->
+    <string name="movement_list_title" >"Movement List"</string>
+    <string name="movement_list_title_1" >"Low level control:"</string>
+    <string name="movement_list_title_2" >"Advanced control:"</string>
+    <string name="movement_list_title_3" >"Misc control:"</string>
+    <string name="movement_text_wheel" >"Wheel <xliff:g id="lock_unlock">%1$s</xliff:g>"</string>
+    <string name="movement_text_body" >"Body <xliff:g id="lock_unlock">%1$s</xliff:g>"</string>
+    <string name="movement_text_lock">" LOCKED"</string>
+    <string name="movement_text_unlock">" UNLOCKED"</string>
+    <string name="movement_btn_text_detect_drop" >"Drop Detection"</string>
+
+    <!-- Safe Mode -->
+    <string name="safe_mode_list_title" >"Safe Mode List"</string>
+
+    <!-- SensorExampleActivity -->
+    <string name="title_example_sensor">Sensor Detect Example</string>
+    <string name="sensor_step_1">Please Try to touch robot</string>
+    <string name="text_hint_head">1 Head</string>
+    <string name="text_hint_chest">2 Chest</string>
+    <string name="text_hint_hand_right">3 Right hand</string>
+    <string name="text_hint_hand_left">4 Left hand</string>
+    <string name="text_hint_face_left">5 Left Face</string>
+    <string name="text_hint_face_right">6 Right Face</string>
+    <string name="text_hint_PIR">PIR Detect</string>
+
+    <!-- MotionSDKExampleActivity -->
+    <string name="motion_sdk_example_title">Motion SDK Example</string>
+    <string name="lbl_example_1">Query All Motions</string>
+    <string name="lbl_example_2">Play Motion Sample</string>
+    <string name="lbl_example_3">Play/Resume/Pause Motion</string>
+    <string name="lbl_example_4">Show/Hide Window when Playing Motion</string>
+    <string name="txt_start_demo">Start Demo</string>
+    <string name="btn_querymotions">Query All Motions and Show them</string>
+    <string name="txt_btn_playmotion">Play Sample</string>
+    <string name="txt_btn_play">Select motion to Play</string>
+    <string name="txt_btn_pause">Pause</string>
+    <string name="txt_btn_resume">Resume</string>
+    <string name="txt_btn_stop">Stop</string>
+    <string name="txt_btn_control_window">Play Sample and show/hide window</string>
+
+
+</resources>

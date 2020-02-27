@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SensorExampleActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        style="@style/style_text"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="@string/sensor_step_1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp">
+    <TextView
+        android:id="@+id/textView_head"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        style="@style/style_text"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="@string/text_hint_head" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp">
+
+        <TextView
+            android:id="@+id/textViewLeftFace"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            style="@style/style_text"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:text="@string/text_hint_face_left" />
+
+        <TextView
+            android:id="@+id/textViewRightFace"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            style="@style/style_text"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:text="@string/text_hint_face_right" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp">
+    <TextView
+        android:id="@+id/textViewChest"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        style="@style/style_text"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="@string/text_hint_chest" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingBottom="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewLeftHand"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            style="@style/style_text"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/text_hint_hand_left" />
+
+        <TextView
+            android:id="@+id/textViewRightHand"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            style="@style/style_text"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/text_hint_hand_right" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp">
+        <TextView
+            android:id="@+id/textViewPIR"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            style="@style/style_text"
+            android:background="@android:color/background_light"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="@string/text_hint_PIR" />
+    </LinearLayout>
+</LinearLayout>
