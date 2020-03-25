@@ -1,5 +1,10 @@
 # `NuwaSDKExample`
 The SDK Example to control robot product of nuwarobotics.
+NuwaSDK and NuwaSDKExample allow on every language.
+The TTS language capability is difference between each market robot software. Please reference following support list.
+* Taiwan : Chinese\English
+* Japan : Japan\English
+* Worldwide : English
 
 # `Nuwa Website`
 * NuwaRobotics Website (https://www.nuwarobotics.com/)
