@@ -3,6 +3,14 @@ The SDK Example to control robot product of nuwarobotics.
 
 NuwaSDK and NuwaSDKExample allow use on every language\market.
 
+# `SRobot Product`
+Robot Generation 1 
+* Kebbi(凱比) : Taiwan
+* Danny(小丹) : China
+
+Robot Generation 2
+* Kebbi Air : Taiwan、Chain、Japan
+
 # `TTS Capability`
 The TTS language capability is difference between each market robot software.
 
