@@ -3,7 +3,7 @@ The SDK Example to control robot product of nuwarobotics.
 
 NuwaSDK and NuwaSDKExample allow use on every language\market.
 
-# `SRobot Product`
+# `Support Robot Product`
 Robot Generation 1 
 * Kebbi(凱比) : Taiwan
 * Danny(小丹) : China
