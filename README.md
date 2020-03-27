@@ -16,7 +16,7 @@ The TTS language capability is difference between each market robot software.
 
 Please reference following support list.
 * Taiwan : Chinese\English
-* Japan : Japan\English
+* Japan : Japan\C\English
 * Worldwide : English
 
 # `Nuwa Website`
