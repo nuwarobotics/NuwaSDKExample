@@ -9,7 +9,7 @@ Robot Generation 1
 * Danny(小丹) : China
 
 Robot Generation 2
-* Kebbi Air : Taiwan、Chain、Japan
+* Kebbi Air : Taiwan、China、Japan
 
 # `TTS Capability`
 The TTS language capability is difference between each market robot software.
