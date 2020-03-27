@@ -21,6 +21,7 @@ import com.nuwarobotics.service.agent.VoiceResultJsonParser;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Locale;
 
 public class TTSActivity extends AppCompatActivity {
     private final String TAG = this.getClass().getSimpleName();
@@ -94,6 +95,12 @@ public class TTSActivity extends AppCompatActivity {
         //Step 4 : call start listen
         Log.d(TAG, "onClick to start startTTS");
         mRobotAPI.startTTS(TTS_sample);
+        // or Used jp language speak
+        // mRobotAPI.startTTS(TTS_sample, Locale.JAPAN.toString());
+        // or Used chinese language speak
+        // mRobotAPI.startTTS(TTS_sample, Locale.TAIWAN.toString());
+        // or Used english language speak
+        // mRobotAPI.startTTS(TTS_sample, Locale.ENGLISH.toString());
 
         runOnUiThread(new Runnable() {
             @Override
