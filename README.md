@@ -15,9 +15,10 @@ Robot Generation 2
 The TTS language capability is difference between each market robot software.
 
 Please reference following support list.
-* Taiwan : Chinese\English
-* Japan : Japan\Chinese\English
-* Worldwide : English
+* Taiwan Market : Locale.CHINESE\Locale.ENGLISH
+* Chinese Market : Locale.CHINESE\Locale.ENGLISH
+* Japan Market : Locale.JAPANESE\Locale.CHINESE\Locale.ENGLISH
+* Worldwide Market : Locale.ENGLISH
 
 # `Nuwa Website`
 * NuwaRobotics Website (https://www.nuwarobotics.com/)
