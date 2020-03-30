@@ -95,10 +95,11 @@ public class TTSActivity extends AppCompatActivity {
         //Step 4 : call start listen
         Log.d(TAG, "onClick to start startTTS");
         mRobotAPI.startTTS(TTS_sample);
+        //The TTS Capability are difference between each market, please read more from SDK Document.
         // or Used jp language speak
-        // mRobotAPI.startTTS(TTS_sample, Locale.JAPAN.toString());
+        // mRobotAPI.startTTS(TTS_sample, Locale.JAPANESE.toString());
         // or Used chinese language speak
-        // mRobotAPI.startTTS(TTS_sample, Locale.TAIWAN.toString());
+        // mRobotAPI.startTTS(TTS_sample, Locale.CHINESE.toString());
         // or Used english language speak
         // mRobotAPI.startTTS(TTS_sample, Locale.ENGLISH.toString());
 
