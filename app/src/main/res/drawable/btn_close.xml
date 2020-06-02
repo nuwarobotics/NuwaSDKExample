@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_pressed="true"
+   android:drawable="@drawable/bt_nav_off_press" /> <!-- pressed -->
+  <item android:state_focused="false"
+   android:drawable="@drawable/bt_nav_off_normal" /> <!-- focused -->
+  <item android:drawable="@drawable/bt_nav_off_normal" /> <!-- default -->
+</selector>

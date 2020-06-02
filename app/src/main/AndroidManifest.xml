@@ -75,6 +75,10 @@
         <activity android:name=".motion.demo.WindowControlWithMotionActivity"
             android:theme="@style/SDK.Motion.Example.Primary.Theme">
         </activity>
+    
+<activity android:name=".activity.DisablePowerkeyExampleActivity"
+            android:theme="@style/SDK.Motion.Example.Primary.Theme">
+        </activity>
     </application>
 
 </manifest>

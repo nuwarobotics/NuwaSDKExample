@@ -18,4 +18,7 @@
     <Label name="voice.CloudASRActivity">[Voice] Cloud ASR Example</Label>
     <Label name="voice.LocalcmdAndCloudASRActivity">[Voice] Local command and Cloud ASR Example</Label>
     <Label name="voice.TTSActivity">[Voice] TTS Example</Label>
+
+    <Label name="activity.DisablePowerkeyExampleActivity">[System] Disable Power Key Example</Label>
+
 </ActivityList>

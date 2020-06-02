@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="color_tv_background">#8099ffff</color>
+
+    <color name="color_bg_gray">#223c48</color>
 </resources>

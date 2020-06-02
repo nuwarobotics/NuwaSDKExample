@@ -74,5 +74,9 @@
     <string name="txt_btn_stop">Stop</string>
     <string name="txt_btn_control_window">Play Sample and show/hide window</string>
 
+    <!-- System control Example-->
+    <string name="disablepowerkey_sdk_example_title">Disable Power Key SDK Example</string>
+    <string name="disablepowerkey_sdk_example_content">Try press power key</string>
+
 
 </resources>
