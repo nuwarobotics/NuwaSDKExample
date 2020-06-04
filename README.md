@@ -42,7 +42,9 @@ Please reference following support list.
     - Cloud ASR Example
     - Local command and Cloud ASR Example
     - TTS Example
-*Advanced
+* System Control
+    - disablePowerKey
+* Advanced
     - Motion with TTS Example
 
 
