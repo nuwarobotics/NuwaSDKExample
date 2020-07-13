@@ -265,7 +265,7 @@ public class FaceControlExampleActivity extends BaseAppCompatActivity {
 
     private void showface(String tts) {
         if (mRobotAPI != null) {
-            mRobotAPI.UnityFaceManager().showUnity(true);//lunch face
+            mRobotAPI.UnityFaceManager().showUnity();//lunch face
             mRobotAPI.startTTS(tts);//speak a TTS
             mouthOn(FACE_MOUTH_SPEED);//starting mouth on animation
         } else {
