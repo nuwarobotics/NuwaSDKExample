@@ -78,5 +78,10 @@
     <string name="disablepowerkey_sdk_example_title">Disable Power Key SDK Example</string>
     <string name="disablepowerkey_sdk_example_content">Try press power key</string>
 
+    <!-- Face Control Example-->
+    <string name="facecontrol_sdk_example_title">Face Control SDK Example</string>
+    <string name="facecontrol_sdk_example_show_face">Try press button to speak TTS with face, and hide face after TTS finish.</string>
+
+
 
 </resources>

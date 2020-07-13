@@ -21,4 +21,6 @@
 
     <Label name="activity.DisablePowerkeyExampleActivity">[System] Disable Power Key Example</Label>
 
+    <Label name="activity.FaceControlExampleActivity">[Face] Face Control Example</Label>
+
 </ActivityList>
