@@ -82,6 +82,8 @@
     <string name="facecontrol_sdk_example_title">Face Control SDK Example</string>
     <string name="facecontrol_sdk_example_show_face">Try press button to speak TTS with face, and hide face after TTS finish.</string>
 
-
+    <!-- start Nuwa FaceRecognition Example-->
+    <string name="start_face_recognition_example_title">Add Face Process Example</string>
+    <string name="start_face_recognition_example_content">"Lunch Nuwa Face Recognition to add a Contact, and get name、faceid.\n - Example 1 : Do not provide name string, lunch full process of Add Contact.\n - Example 2 : Input name string, lunch only Face Recognition of Add Contact directly."</string>
 
 </resources>

@@ -76,14 +76,16 @@
             android:theme="@style/SDK.Motion.Example.Primary.Theme">
         </activity>
     
-<activity android:name=".activity.DisablePowerkeyExampleActivity"
+        <activity android:name=".activity.DisablePowerkeyExampleActivity"
             android:theme="@style/SDK.Motion.Example.Primary.Theme">
         </activity>
     
-<activity android:name=".activity.FaceControlExampleActivity"
+        <activity android:name=".activity.FaceControlExampleActivity"
             android:theme="@style/SDK.Motion.Example.Primary.Theme">
         </activity>
-
+        <activity android:name=".activity.startNuwaFaceRecognitionActivity"
+            android:theme="@style/SDK.Motion.Example.Primary.Theme">
+        </activity>
     </application>
 
 </manifest>
