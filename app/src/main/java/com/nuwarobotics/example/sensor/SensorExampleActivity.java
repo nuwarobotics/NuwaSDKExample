@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.nuwarobotics.example.R;
@@ -22,6 +24,7 @@ public class SensorExampleActivity extends AppCompatActivity {
     IClientId mClientId;
     TextView mTextHead,mTextChest,mTextFaceLeft,mTextFaceRight,mTextHandLeft,mTextHandRight;
     TextView mTextPIR;
+    Button mBtnStop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,17 @@ public class SensorExampleActivity extends AppCompatActivity {
         mTextFaceLeft = (TextView)findViewById(R.id.textViewLeftFace);
         mTextFaceRight = (TextView)findViewById(R.id.textViewRightFace);
         mTextPIR = (TextView)findViewById(R.id.textViewPIR);
+        mBtnStop = (Button)findViewById(R.id.textViewStopSensor);
+        mBtnStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mRobotAPI!=null){
+                    //Stop Listen sensor event
+                    mRobotAPI.stopSensor(NuwaRobotAPI.SENSOR_TOUCH | NuwaRobotAPI.SENSOR_PIR | NuwaRobotAPI.SENSOR_DROP);
+                }
+            }
+        });
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -78,7 +92,7 @@ public class SensorExampleActivity extends AppCompatActivity {
             Log.d(TAG,"onWikiServiceStart, robot ready to be control ") ;
             // request touch sensor event
             //NOTICE : PLEASE REQUEST ON SERVICE_START
-            mRobotAPI.requestSensor(NuwaRobotAPI.SENSOR_TOUCH | NuwaRobotAPI.SENSOR_PIR | NuwaRobotAPI.SENSOR_DROP);
+            mRobotAPI.requestSensor(NuwaRobotAPI.SENSOR_TOUCH | NuwaRobotAPI.SENSOR_PIR | NuwaRobotAPI.SENSOR_DROP );
             //touch event will received by onTouchEvent
             //PIR event will received by onPIREvent
             //drop sensor event will received by onDropSensorEvent
@@ -234,6 +248,7 @@ public class SensorExampleActivity extends AppCompatActivity {
 
         @Override
         public void onRawTouch(int i, int i1, int i2) {
+            Log.d(TAG,"type ="+i+" x="+i1+" y="+i2);
 
         }
 

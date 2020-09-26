@@ -59,6 +59,8 @@
     <string name="text_hint_face_right">6 Right Face</string>
     <string name="text_hint_PIR">PIR Detect</string>
 
+    <string name="text_hint_stop_sensor">Stop Listen Sensor</string>
+
     <!-- MotionSDKExampleActivity -->
     <string name="motion_sdk_example_title">Motion SDK Example</string>
     <string name="lbl_example_1">Query All Motions</string>
