@@ -86,6 +86,13 @@
         <activity android:name=".activity.startNuwaFaceRecognitionActivity"
             android:theme="@style/SDK.Motion.Example.Primary.Theme">
         </activity>
+    
+<activity android:name=".activity.TemperatureMeasure"
+            android:theme="@style/SDK.Motion.Example.Primary.Theme">
+        </activity>
+        <activity android:name=".activity.VideoCall"
+            android:theme="@style/SDK.Motion.Example.Primary.Theme">
+        </activity>
     </application>
 
 </manifest>
