@@ -30,12 +30,15 @@ Please reference following support list.
 * Please get NuwaSDK aar from [developer website](https://dss.nuwarobotics.com/) and modify app [build.gradle](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/build.gradle)
     
 ```
-//TODO : Please download newest NuwaSDK from Nuwa Developer Website https://dss.nuwarobotics.com/
-//Step 1 : Copy aar to project lib folder : NuwaSDKExample\app\libs
-//Step 2 : Replace below NuwaSDK file name
-implementation(name: 'NuwaSDK-2020-06-11_v2.1.0.01.d0e7018', ext: 'aar')
+dependencies {
+    //NOTICE : Please declare filetree if you create your own Android Project
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //TODO : Please download newest NuwaSDK from Nuwa Developer Website https://dss.nuwarobotics.com/
+    //Step 1 : Copy aar to project lib folder : NuwaSDKExample\app\libs
+    //Step 2 : Replace below NuwaSDK file name
+    implementation(name: 'NuwaSDK-2020-06-11_v2.1.0.01.d0e7018', ext: 'aar')
+}
 ```
-
 
 # `NuwaSDK example`
 * Robot Motion Control
