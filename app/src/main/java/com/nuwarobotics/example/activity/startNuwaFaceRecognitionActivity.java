@@ -18,8 +18,7 @@ import com.nuwarobotics.service.agent.NuwaRobotAPI;
 import com.nuwarobotics.service.agent.RobotEventListener;
 
 /**
- * Some 3rd app prefer not leave app by press power key
- * Example of call disablePowerKey() and enablePowerKey() API.
+ * Allow developer call nuwa AddFamily app to add a member
  * Target SDK : 2.0.0.08
  */
 public class startNuwaFaceRecognitionActivity extends BaseAppCompatActivity {
