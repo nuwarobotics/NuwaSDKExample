@@ -115,6 +115,12 @@ public class StartBLEConnnection extends BaseAppCompatActivity {
             try {
                 if (mNuwaBLEService.isBluetoothReady()) {
                     // Automatically connects to the device upon successful start-up initialization.
+
+                    if (mNuwaBLEService.getBLEStatus(BLEConstant.BLE_MODE_NUWA_THERMOMETER_VSS) == BLEConstant.STATE_CONNECTED) {
+                        //BLE device is connected
+                    } else {
+                        //BLE device is not connnected
+                    }
                 }
             }catch (RemoteException e) {
                 Log.e(TAG, "exception "+ e);
