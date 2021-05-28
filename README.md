@@ -24,7 +24,7 @@ Please reference following support list.
 * NuwaRobotics Website (https://www.nuwarobotics.com/)
 * NuwaRobotics Developer Website (https://dss.nuwarobotics.com/)
 * Nuwa SDK JavaDoc (https://developer-docs.nuwarobotics.com/sdk/javadoc/reference/packages.html)
-* Nuwa Public Motion Preview (https://bj.bcebos.com/v1/nuwarobotics-files/sdk/kebbi_motion_preview/showPic.html)
+* Nuwa Public Motion Preview (https://developer-docs.nuwarobotics.com/sdk/kebbi_motion_preview/showPic.html)
 
 # `Start to Use`
 
