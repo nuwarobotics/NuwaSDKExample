@@ -32,23 +32,31 @@
             android:layout_marginTop="30dp" />
     </RelativeLayout>
 
-    <Button
-        android:id="@+id/btn_get_auth"
+    
+<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:textSize="25sp"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/start_auth_example_search_broadcast" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        
+android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
         android:textColor="@android:color/white"
         android:textSize="25sp"
-        android:text="@string/start_auth_example_solution1"/>
+        
+android:text="@string/start_auth_example_solution1"/>
+
+    
+<Button
+        android:id="@+id/btn_start_auth_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        
+android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        
+android:text="@string/start_auth_example_search_broadcast" />
 
     <Button
         android:id="@+id/btn_start_auth"
@@ -68,6 +76,16 @@
         android:textColor="@android:color/white"
         android:textSize="25sp"
         android:text="@string/start_auth_example_solution2"/>
+
+    
+<Button
+        android:id="@+id/btn_get_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/start_auth_example_search_broadcast" />
 
     <LinearLayout
         android:layout_width="wrap_content"

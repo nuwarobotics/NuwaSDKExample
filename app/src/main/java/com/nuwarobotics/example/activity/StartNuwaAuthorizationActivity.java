@@ -9,6 +9,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -110,6 +111,8 @@ public class StartNuwaAuthorizationActivity extends AppCompatActivity implements
     private static final String PROVIDER_NAME = "provider_name";
     // parameter3(Authorization code)
     private static final String AUTH_CODE = "auth_code";
+    // parameter4(Flag of search only)
+    private static final String SEARCH_ONLY = "search_only";
     // KEY of authorization status in authorization result
     private static final String KEY_AUTH_STATUS = "auth_status";
     // KEY of the authorization expiration time in the authorization result
@@ -120,6 +123,7 @@ public class StartNuwaAuthorizationActivity extends AppCompatActivity implements
     private static final String STATUS_ACTIVE = "activated";
     private static final String STATUS_INACTIVE = "inactivated";
     private static final String STATUS_OVERDUE = "overdue";
+    private static final int SEARCH_REQUEST_CODE = 0xcc;
     private static final int REQUEST_CODE = 0xdd;
 
     private EditText etCode;
@@ -131,11 +135,12 @@ public class StartNuwaAuthorizationActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_start_nuwa_authorization);
         findViewById(R.id.ib_btn_quit).setOnClickListener(this);
         findViewById(R.id.btn_start_auth).setOnClickListener(this);
+        findViewById(R.id.btn_start_auth_search).setOnClickListener(this);
         findViewById(R.id.btn_get_auth).setOnClickListener(this);
         findViewById(R.id.btn_set_auth_broadcast).setOnClickListener(this);
         etCode = findViewById(R.id.et_auth_input);
         tvResult = findViewById(R.id.tv_auth_result);
-        // Step 1: Register broadcast to receive result
+        // Solution 2 Step 1: Register broadcast to receive result
         IntentFilter filter = new IntentFilter();
         // Search authorization status
         // Register broadcast and add two actions:ACTION_AUTH_SEARCH_RESULT & ACTION_AUTH_SEARCH_ERROR
@@ -213,18 +218,17 @@ public class StartNuwaAuthorizationActivity extends AppCompatActivity implements
             case R.id.ib_btn_quit:
                 finish();
                 break;
-            case R.id.btn_get_auth:
-                // Step2: Search authorization status
-                Intent searchIntent = new Intent();
-                searchIntent.setComponent(new ComponentName(AUTH_SERVICE_PACKAGE, AUTH_SERVICE_RECEIVER));
-                searchIntent.setAction(ACTION_AUTH_SEARCH);
-                // package name
-                searchIntent.putExtra(PACKAGE_NAME, getApplication().getPackageName());
-                sendBroadcast(searchIntent);
+            case R.id.btn_start_auth_search:// Solution 1 Step1: Search authorization status
+                Intent searchIntent1 = new Intent();
+                searchIntent1.setComponent(new ComponentName(AUTH_SERVICE_PACKAGE, AUTH_SERVICE_ACTIVITY));
+                searchIntent1.putExtra(PACKAGE_NAME, getApplication().getPackageName());
+                searchIntent1.putExtra(PROVIDER_NAME, "NUWA");
+                // *Note that this parameter must be transmitted
+                searchIntent1.putExtra(SEARCH_ONLY, true);
+                startActivityForResult(searchIntent1, SEARCH_REQUEST_CODE);
                 break;
-            case R.id.btn_start_auth:// Solution 1: Launch NUWA Authorization
-                // Step3: Call up the authorization page to activate the authorization
-                // Send query broadcast, note that the package name must be transmitted
+            case R.id.btn_start_auth:// Solution 1 Step2: Launch NUWA Authorization
+                // Call up the authorization page to activate the authorization
                 Intent activateIntent = new Intent();
                 activateIntent.setComponent(new ComponentName(AUTH_SERVICE_PACKAGE, AUTH_SERVICE_ACTIVITY));
                 // package name
@@ -233,8 +237,18 @@ public class StartNuwaAuthorizationActivity extends AppCompatActivity implements
                 activateIntent.putExtra(PROVIDER_NAME, "NUWA");
                 startActivityForResult(activateIntent, REQUEST_CODE);
                 break;
-            case R.id.btn_set_auth_broadcast:// Solution 2 to Activate authorization
-                // Step3: Use your own authorization page to activate authorization
+            case R.id.btn_get_auth:
+                // Solution 2 Step2: Search authorization status
+                // Send query broadcast, note that the package name must be transmitted
+                Intent searchIntent = new Intent();
+                searchIntent.setComponent(new ComponentName(AUTH_SERVICE_PACKAGE, AUTH_SERVICE_RECEIVER));
+                searchIntent.setAction(ACTION_AUTH_SEARCH);
+                // package name
+                searchIntent.putExtra(PACKAGE_NAME, getApplication().getPackageName());
+                sendBroadcast(searchIntent);
+                break;
+            case R.id.btn_set_auth_broadcast:// Solution 2 Step3: Activate authorization
+                // Use your own authorization page to activate authorization
                 // Send the activation authorization broadcast at the appropriate time, and transmit the application package name and authorization code
                 String code = etCode.getText().toString().trim();
                 if (!checkCode(code)) {
@@ -268,7 +282,7 @@ public class StartNuwaAuthorizationActivity extends AppCompatActivity implements
     /**
      * Example of receive Activation result
      * @param requestCode
-     * @param resultCode RESULT_OK if auth success, other value means auth fail.
+     * @param resultCode RESULT_OK if query or auth success, other value means fail.
      * @param data intent format which include auth data
      */
     @Override
@@ -279,10 +293,31 @@ public class StartNuwaAuthorizationActivity extends AppCompatActivity implements
                 // Activation successful
                 if (data != null) {
                     // Get expiration time by solution 1
+                    String authStatus = data.getStringExtra(KEY_AUTH_STATUS);
                     String endtime = data.getStringExtra(KEY_AUTH_ENDTIME);
                 }
             } else {
                 // Activation failed by solution 1
+                if (data != null) {
+                    // This value may be null
+                    String err = data.getStringExtra(KEY_AUTH_ERROR_MESSAGE);
+                }
+            }
+        }  else if (requestCode == SEARCH_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                // Query successful by solution1
+                if (data != null) {
+                    // Get the result of query authorization status
+                    String authStatus = data.getStringExtra(KEY_AUTH_STATUS);
+                    // This value may be null
+                    String endtime = data.getStringExtra(KEY_AUTH_ENDTIME);
+                }
+            } else {
+                // Query failed by solution1
+                if (data != null) {
+                    // This value may be null
+                    String err = data.getStringExtra(KEY_AUTH_ERROR_MESSAGE);
+                }
             }
         }
     }
