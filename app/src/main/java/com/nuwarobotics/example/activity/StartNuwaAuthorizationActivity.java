@@ -19,7 +19,7 @@ import com.nuwarobotics.example.R;
 /**
  * NUWA Authorization Example
  * Supported Software Version : Still not publish
- * 
+ *
  * This is a "NUWA 3rd App Active Code Authorization" service on Kebbi.
  * 3rd app could use Authorization interface to check is active code valid.
  * It allow 3rd company upload app to Nuwa Store for free download, and get(apply) active code for app use permission.
@@ -43,8 +43,8 @@ import com.nuwarobotics.example.R;
  * Method 1 Sample Code - startActiviryForResult
  * lunch nuwa LicenceAuthActivity to confirm auth result.
  *      Intent activateIntent = new Intent();
- *      activateIntent.setComponent(new ComponentName(HOME_PACKAGE, HOME_ACTIVITY));
- *      // package name
+ *      activateIntent.setComponent(new ComponentName(AUTH_SERVICE_PACKAGE, AUTH_SERVICE_ACTIVITY));
+ *      // package name of 3rd app (this string should register to NUWA server)
  *      activateIntent.putExtra(PACKAGE_NAME, getApplication().getPackageName());
  *      // Use your company's name instead of "NUWA"
  *      activateIntent.putExtra(PROVIDER_NAME, "NUWA");
