@@ -23,6 +23,23 @@ Please reference following support list.
 # `Nuwa Website`
 * NuwaRobotics Website (https://www.nuwarobotics.com/)
 * NuwaRobotics Developer Website (https://dss.nuwarobotics.com/)
+* Nuwa SDK JavaDoc (https://developer-docs.nuwarobotics.com/sdk/javadoc/reference/packages.html)
+* Nuwa Public Motion Preview (https://developer-docs.nuwarobotics.com/sdk/kebbi_motion_preview/showPic.html)
+
+# `Start to Use`
+
+* Please get NuwaSDK aar from [developer website](https://dss.nuwarobotics.com/) and modify app [build.gradle](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/build.gradle)
+    
+```
+dependencies {
+    //NOTICE : Please declare filetree if you create your own Android Project
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //TODO : Please download newest NuwaSDK from Nuwa Developer Website https://dss.nuwarobotics.com/
+    //Step 1 : Copy aar to project lib folder : NuwaSDKExample\app\libs
+    //Step 2 : Replace below NuwaSDK file name
+    implementation(name: 'NuwaSDK-2020-06-11_v2.1.0.01.d0e7018', ext: 'aar')
+}
+```
 
 # `NuwaSDK example`
 * Robot Motion Control

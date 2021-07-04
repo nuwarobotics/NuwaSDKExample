@@ -23,4 +23,8 @@
 
     <Label name="activity.FaceControlExampleActivity">[Face] Face Control Example</Label>
 
+    <Label name="activity.startNuwaFaceRecognitionActivity">[Contact] Lunch Nuwa Add Contact(Face Recognition) Example</Label>
+
+    <Label name="activity.StartNuwaAuthorizationActivity">[Auth] Launch NUWA Authorization Example</Label>
+
 </ActivityList>

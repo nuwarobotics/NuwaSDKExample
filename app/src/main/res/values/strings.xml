@@ -28,7 +28,7 @@
     <string name="btn_led_hand_left">"Left Hand"</string>
     <string name="btn_led_hand_right">"Right Hand"</string>
     <string name="btn_stop_system">"Disable System Control LED"</string>
-    <string name="btn_return_system" >"Return System Control LED"</string>
+    <string name="btn_return_system">"Return System Control LED"</string>
 
 
     <!-- Motor Control -->
@@ -36,12 +36,12 @@
     <string name="motor_btn_text_go">GO</string>
 
     <!-- Movement Control -->
-    <string name="movement_list_title" >"Movement List"</string>
-    <string name="movement_list_title_1" >"Low level control:"</string>
-    <string name="movement_list_title_2" >"Advanced control:"</string>
-    <string name="movement_list_title_3" >"Misc control:"</string>
-    <string name="movement_text_wheel" >"Wheel <xliff:g id="lock_unlock">%1$s</xliff:g>"</string>
-    <string name="movement_text_body" >"Body <xliff:g id="lock_unlock">%1$s</xliff:g>"</string>
+    <string name="movement_list_title">"Movement List"</string>
+    <string name="movement_list_title_1">"Low level control:"</string>
+    <string name="movement_list_title_2">"Advanced control:"</string>
+    <string name="movement_list_title_3">"Misc control:"</string>
+    <string name="movement_text_wheel">"Wheel <xliff:g id="lock_unlock">%1$s</xliff:g>"</string>
+    <string name="movement_text_body">"Body <xliff:g id="lock_unlock">%1$s</xliff:g>"</string>
     <string name="movement_text_lock">" LOCKED"</string>
     <string name="movement_text_unlock">" UNLOCKED"</string>
     <string name="movement_text_forward_backward">"Forward/Backward:"</string>
@@ -55,7 +55,7 @@
     <string name="movement_btn_text_stop" >Stop</string>
 
     <!-- Safe Mode -->
-    <string name="safe_mode_list_title" >"Safe Mode List"</string>
+    <string name="safe_mode_list_title">"Safe Mode List"</string>
 
     <!-- SensorExampleActivity -->
     <string name="title_example_sensor">Sensor Detect Example</string>
@@ -67,6 +67,8 @@
     <string name="text_hint_face_left">5 Left Face</string>
     <string name="text_hint_face_right">6 Right Face</string>
     <string name="text_hint_PIR">PIR Detect</string>
+
+    <string name="text_hint_stop_sensor">Stop Listen Sensor</string>
 
     <!-- MotionSDKExampleActivity -->
     <string name="motion_sdk_example_title">Motion SDK Example</string>
@@ -91,6 +93,30 @@
     <string name="facecontrol_sdk_example_title">Face Control SDK Example</string>
     <string name="facecontrol_sdk_example_show_face">Try press button to speak TTS with face, and hide face after TTS finish.</string>
 
+    <!-- start Nuwa FaceRecognition Example-->
+    <string name="start_face_recognition_example_title">Add Face Process Example</string>
+    <string name="start_face_recognition_example_content">"Lunch Nuwa Face Recognition to add a Contact, and get name、faceid.\n - Example 1 : Do not provide name string, lunch full process of Add Contact.\n - Example 2 : Input name string, lunch only Face Recognition of Add Contact directly."</string>
 
+    <!-- start Nuwa Temperature Measure Example-->
+    <string name="start_temperature_measure_example_title">Temperature Measure Example</string>
+    <string name="start_temperature_measure_example_content">"Measure temperature for human face."</string>
+    <string name="btn_measure_flir">"FLIR"</string>
+    <string name="btn_measure_flir_kebbi_face">"FLIR with Kebbi Face"</string>
+    <string name="btn_measure_melexis">"Melexis"</string>
+
+    <!-- start Nuwa Video Call Example-->
+    <string name="start_video_call_example_title">Video Call Example</string>
+    <string name="start_video_call_example_content">"Start video call."</string>
+
+    <!-- start NUWA Authorization Example-->
+    <string name="start_auth_example_title">NUWA Authorization Example</string>
+    <string name="start_auth_example_search_broadcast">"Search status of authorization"</string>
+    <string name="start_auth_example_solution1">Solution 1</string>
+    <string name="start_auth_example_activity">"Launch NUWA Authorization"</string>
+    <string name="start_auth_example_solution2">Solution 2</string>
+    <string name="start_auth_example_activate_broadcast">"Activate authorization"</string>
+    <string name="start_auth_example_activate_input_hint">Please input authorization code</string>
+    <string name="start_auth_example_activate_input_tip">16 alphanumeric characters, must include lower and upper case letters.</string>
+    <string name="start_auth_example_result">Status: %1s \nDate of expiry:%2s</string>
 
 </resources>

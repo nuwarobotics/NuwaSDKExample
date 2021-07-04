@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg_gray"
+    tools:context=".activity.StartNuwaAuthorizationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ib_btn_quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingLeft="40dp"
+            android:paddingTop="35dp"
+            android:src="@drawable/btn_close" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="52sp"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:text="@string/start_auth_example_title"
+            android:layout_marginTop="30dp" />
+    </RelativeLayout>
+
+    
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        
+android:text="@string/start_auth_example_solution1"/>
+
+    
+<Button
+        android:id="@+id/btn_start_auth_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        
+android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        
+android:text="@string/start_auth_example_search_broadcast" />
+
+    <Button
+        android:id="@+id/btn_start_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/start_auth_example_activity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:text="@string/start_auth_example_solution2"/>
+
+    
+<Button
+        android:id="@+id/btn_get_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/start_auth_example_search_broadcast" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/et_auth_input"
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:digits="0123456789QWERTYUIOPASDFGHJKLZXCVBNM"
+            android:hint="@string/start_auth_example_activate_input_hint"
+            android:imeOptions="actionDone"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingStart="22dp"
+            android:paddingEnd="20dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="#b6b6b6"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn_set_auth_broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginStart="10dp"
+            android:textSize="25sp"
+            android:text="@string/start_auth_example_activate_broadcast" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_auth_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:textSize="25sp"/>
+
+
+</LinearLayout>
