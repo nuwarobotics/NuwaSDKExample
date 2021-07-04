@@ -33,6 +33,7 @@
 
     <!-- Motor Control -->
     <string name="motor_list_title" >"Motor List"</string>
+    <string name="motor_btn_text_go">GO</string>
 
     <!-- Movement Control -->
     <string name="movement_list_title" >"Movement List"</string>
@@ -43,7 +44,15 @@
     <string name="movement_text_body" >"Body <xliff:g id="lock_unlock">%1$s</xliff:g>"</string>
     <string name="movement_text_lock">" LOCKED"</string>
     <string name="movement_text_unlock">" UNLOCKED"</string>
+    <string name="movement_text_forward_backward">"Forward/Backward:"</string>
+    <string name="movement_text_forward_backward_hint">A positive number is forward and a negative number is backward.</string>
+    <string name="movement_text_turn">"Turn:"</string>
+    <string name="movement_text_turn_hint">A positive number is turning right and a negative number is turning left.</string>
+    <string name="movement_text_in">in</string>
+    <string name="movement_text_seconds">second(s)</string>
     <string name="movement_btn_text_detect_drop" >"Drop Detection"</string>
+    <string name="movement_btn_text_go" >GO</string>
+    <string name="movement_btn_text_stop" >Stop</string>
 
     <!-- Safe Mode -->
     <string name="safe_mode_list_title" >"Safe Mode List"</string>

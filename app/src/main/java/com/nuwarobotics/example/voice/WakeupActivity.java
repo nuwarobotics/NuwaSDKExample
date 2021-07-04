@@ -80,7 +80,7 @@ public class WakeupActivity extends AppCompatActivity {
             return;
         }
 
-        setText(getCurrentTime() + "Start Wakeup, You can say: Hello Kebbi", false);
+        setText(getCurrentTime() + "Start Wakeup, You can say the term to wakeup", false);
         //Step 3 : Start to wait wakeup trigger
         mRobotAPI.startWakeUp(true);
 
