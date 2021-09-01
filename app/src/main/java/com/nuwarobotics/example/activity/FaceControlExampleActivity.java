@@ -15,6 +15,7 @@ import com.nuwarobotics.service.IClientId;
 import com.nuwarobotics.service.agent.NuwaRobotAPI;
 import com.nuwarobotics.service.agent.RobotEventListener;
 import com.nuwarobotics.service.agent.VoiceEventListener;
+import com.nuwarobotics.service.facecontrol.UnityFaceCallback;
 import com.nuwarobotics.service.facecontrol.utils.ServiceConnectListener;
 
 /**
@@ -76,6 +77,8 @@ public class FaceControlExampleActivity extends BaseAppCompatActivity {
         public void onConnectChanged(ComponentName componentName, boolean b) {
             //isBindFace = b;
             Log.d(TAG, "faceService onbind : " + b);
+            //Step 4 : register face callback
+            mRobotAPI.UnityFaceManager().registerCallback(mUnityFaceCallback);
         }
     };
     @Override
@@ -352,5 +355,47 @@ public class FaceControlExampleActivity extends BaseAppCompatActivity {
         public void onHotwordChange(HotwordState hotwordState, HotwordType hotwordType, String s) {
 
         }
+    };
+    UnityFaceCallback mUnityFaceCallback = new UnityFaceCallback(){
+        @Override
+        public void on_touch_left_eye() {
+            Log.d("FaceControl", "on_touch_left_eye()");
+        }
+
+        @Override
+        public void on_touch_right_eye() {
+            Log.d("FaceControl", "on_touch_right_eye()");
+        }
+
+        @Override
+        public void on_touch_nose() {
+            Log.d("FaceControl", "on_touch_nose()");
+        }
+
+        @Override
+        public void on_touch_mouth() {
+            Log.d("FaceControl", "on_touch_mouth()");
+        }
+
+        @Override
+        public void on_touch_head() {
+            Log.d("FaceControl", "on_touch_head()");
+        }
+
+        @Override
+        public void on_touch_left_edge() {
+            Log.d("FaceControl", "on_touch_left_edge()");
+        }
+
+        @Override
+        public void on_touch_right_edge() {
+            Log.d("FaceControl", "on_touch_right_edge()");
+        }
+
+        @Override
+        public void on_touch_bottom() {
+            Log.d("FaceControl", "on_touch_bottom()");
+        }
+
     };
 }
