@@ -38,6 +38,13 @@ dependencies {
     //Step 1 : Copy aar to project lib folder : NuwaSDKExample\app\libs
     //Step 2 : Replace below NuwaSDK file name
     implementation(name: 'NuwaSDK-2020-06-11_v2.1.0.01.d0e7018', ext: 'aar')
+    //Please also include relative aar
+    implementation "com.google.code.gson:gson:2.3.1"
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
 }
 ```
 
@@ -59,9 +66,11 @@ dependencies {
     - Cloud ASR Example
     - Local command and Cloud ASR Example
     - TTS Example
+* Face Control
+    - Face Show/Hide Example
+    - Face touch event callback example
 * System Control
     - disablePowerKey
 * Advanced
     - Motion with TTS Example
-
 
