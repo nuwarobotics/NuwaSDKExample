@@ -50,27 +50,30 @@ repositories {
 
 # `NuwaSDK example`
 * Robot Motion Control
-    - Query Motion List Example
-    - Motion Play Example
-    - Motion Play/Pause/Resume Control Example
-    - Motion Play with window view control Example
+    - Query Motion List Example [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/motion/demo/QueryMotionActivity.java)
+    - Motion Play Example [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/motion/demo/PlayMotionActivity.java)
+    - Motion Play/Pause/Resume Control Example [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/motion/demo/ControlMotionActivity.java)
+    - Motion Play with window view control Example [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/motion/demo/WindowControlWithMotionActivity.java)
 * Robot Motor Control
-    - Motor control Example
-    - Movement control Example
+    - Motor control Example [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/motor/MotorControlActivity.java)
+    - Movement control Example [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/motor/MovementControlActivity.java)
 * Other Sensor Example
-    - LED Control Example
-    - Sensor Detect Example
+    - LED Control Example [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/led/LEDExampleActivity.java)
+    - Sensor Detect Example [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/sensor/SensorExampleActivity.java)
 * ASR/TTS
-    - Wakeup Example [code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/WakeupActivity.java)
-    - Local command Example [code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/LocalcmdActivity.java)
-    - Cloud ASR Example [code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/CloudASRActivity.java)
-    - Local command and Cloud ASR Example [code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/LocalcmdAndCloudASRActivity.java)
-    - TTS Example [code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/TTSActivity.java)
-* Face Control [code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/activity/FaceControlExampleActivity.java) 
+    - Wakeup Example [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/WakeupActivity.java)
+    - Local command Example [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/LocalcmdActivity.java)
+    - Cloud ASR Example [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/CloudASRActivity.java)
+    - Local command and Cloud ASR Example [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/LocalcmdAndCloudASRActivity.java)
+    - TTS Example [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/TTSActivity.java)
+* Face Control [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/activity/FaceControlExampleActivity.java) 
     - Face Show/Hide Example
     - Face touch event callback example
 * System Control
-    - disablePowerKey
+    - disablePowerKey [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/activity/DisablePowerkeyExampleActivity.java)
 * Advanced
-    - Motion with TTS Example
+    - Motion with TTS Example [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/motion/MotionTtsExampleActivity.java)
+    - Launch Nuwa add family member [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/activity/startNuwaFaceRecognitionActivity.java)
+    - Launch Nuwa Video call, and call specific member [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/activity/VideoCall.java)
+    
 
