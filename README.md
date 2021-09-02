@@ -61,12 +61,12 @@ repositories {
     - LED Control Example
     - Sensor Detect Example
 * ASR/TTS
-    - Wakeup Example
-    - Local command Example
-    - Cloud ASR Example
-    - Local command and Cloud ASR Example
-    - TTS Example
-* Face Control
+    - Wakeup Example [code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/WakeupActivity.java)
+    - Local command Example [code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/LocalcmdActivity.java)
+    - Cloud ASR Example [code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/CloudASRActivity.java)
+    - Local command and Cloud ASR Example [code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/LocalcmdAndCloudASRActivity.java)
+    - TTS Example [code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/voice/TTSActivity.java)
+* Face Control [code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/activity/FaceControlExampleActivity.java) 
     - Face Show/Hide Example
     - Face touch event callback example
 * System Control
