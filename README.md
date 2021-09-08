@@ -3,6 +3,9 @@ The SDK Example to control robot product of nuwarobotics.
 
 NuwaSDK and NuwaSDKExample allow use on every language\market.
 
+# `Nuwa SDK`
+Newest Nuwa SDK：2.1.0.08
+
 # `Support Robot Product`
 Robot Generation 1 
 * Kebbi(凱比) : Taiwan
@@ -37,7 +40,7 @@ dependencies {
     //TODO : Please download newest NuwaSDK from Nuwa Developer Website https://dss.nuwarobotics.com/
     //Step 1 : Copy aar to project lib folder : NuwaSDKExample\app\libs
     //Step 2 : Replace below NuwaSDK file name
-    implementation(name: 'NuwaSDK-2020-06-11_v2.1.0.01.d0e7018', ext: 'aar')
+    implementation(name: 'NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7', ext: 'aar')
     //Please also include relative aar
     implementation "com.google.code.gson:gson:2.3.1"
 }
