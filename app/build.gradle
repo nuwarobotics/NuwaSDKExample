@@ -33,10 +33,10 @@ dependencies {
     implementation "com.android.support:support-v4:28.0.0"
     implementation "com.android.support:support-v13:28.0.0"
     implementation 'com.android.support:design:28.0.0'
-    //TODO : Please download newest NuwaSDK from Nuwa Developer Website https://dss.nuwarobotics.com/
+    //TODO : Please download newest NuwaSDK from Nuwa Developer Website https://dss.nuwarobotics.com/documents/sdkDescription/robotSdk
     //Step 1 : Copy aar to project lib folder : NuwaSDKExample\app\libs
     //Step 2 : Replace below NuwaSDK file name
-    implementation(name: 'NuwaSDK-2021-04-16_1611_2.1.0.07_c23c8f', ext: 'aar')
+    implementation(name: 'NuwaSDK-2021-07-08_1058_2.1.0.08_e21fe7', ext: 'aar')
 
     //TODO : Please download newest NuwaSDK from Nuwa Developer Website https://dss.nuwarobotics.com/
     //Step 1 : Copy aar to project lib folder : NuwaSDKExample\app\libs
