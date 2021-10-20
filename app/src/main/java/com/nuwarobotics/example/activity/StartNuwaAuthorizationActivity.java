@@ -19,7 +19,9 @@ import com.nuwarobotics.example.R;
 
 /**
  * NUWA Authorization Example
- * Supported Software Version : Still not publish
+ * Supported Software Version : 
+ * 1. AIR-H200 1.4965.100JP.1
+ * 2. AIR-H200 1.4962.10000.1
  *
  * This is a "NUWA 3rd App Active Code Authorization" service on Kebbi.
  * 3rd app could use Authorization interface to check is active code valid.
