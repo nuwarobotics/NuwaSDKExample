@@ -86,7 +86,7 @@ public class CloudASRActivity extends AppCompatActivity {
 
         //Step 4 : call start listen
         Log.d(TAG,"onClick to start startLocalCommand") ;
-        //ASR allow user set listen language.
+        //ASR allow set listen language. (en-US/zh-TW/zh-HK etc..)
         mRobotAPI.setListenParameter(VoiceEventListener.ListenType.RECOGNIZE, "language", "en-US");
         //start listen 
         mRobotAPI.startSpeech2Text(false);//Start listen without wakeup,
