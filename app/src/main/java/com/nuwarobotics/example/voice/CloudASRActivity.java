@@ -86,7 +86,9 @@ public class CloudASRActivity extends AppCompatActivity {
 
         //Step 4 : call start listen
         Log.d(TAG,"onClick to start startLocalCommand") ;
-        //when Robot listen string you setup by createGrammar
+        //ASR allow user set listen language.
+        mRobotAPI.setListenParameter(VoiceEventListener.ListenType.RECOGNIZE, "language", "en-US");
+        //start listen 
         mRobotAPI.startSpeech2Text(false);//Start listen without wakeup,
 
         runOnUiThread(new Runnable() {
