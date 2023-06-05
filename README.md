@@ -80,3 +80,12 @@ repositories {
     - Launch Nuwa Video call, and call specific member [Code link](https://github.com/nuwarobotics/NuwaSDKExample/blob/master/app/src/main/java/com/nuwarobotics/example/activity/VideoCall.java)
     
 
+# `Q & A`
+Q : How to solve 「Unable to find method 'org.gradle.api.artifacts.result.ComponentSelectionReason.getDescription()Ljava/lang/String;'」problem ?
+
+A : Please try to modify following configuration
+* NuwaSDKExample/gradle/wrapper/gradle-wrapper.properties
+    - distributionUrl=https\://services.gradle.org/distributions/gradle-6.8.3-bin.zip
+* NuwaSDKExample/build.gradle
+    - classpath 'com.android.tools.build:gradle:4.0.1'
+
