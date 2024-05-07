@@ -3,6 +3,12 @@ The SDK Example to control robot product of nuwarobotics.
 
 NuwaSDK and NuwaSDKExample allow use on every language\market.
 
+# `Develop environment of sample code`
+* Android Studio : android-studio-ide-201.6858069
+* Android Minimum SDK : API 28 - Android 9.0(Pie)
+* Language : Java
+* Project setting : check Use legacy android.support library
+
 # `Nuwa SDK`
 Newest Nuwa SDK：2.1.0.08
 
