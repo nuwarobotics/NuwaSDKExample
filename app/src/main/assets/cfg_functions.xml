@@ -6,6 +6,7 @@
     <!--<Label name="motion.MotionSDKExampleActivity">Motion SDK Example</Label>-->
     <Label name="motion.demo.QueryMotionActivity">[Motion] Query Motion List Example</Label>
     <Label name="motion.demo.PlayMotionActivity">[Motion] Motion Play Example</Label>
+    <Label name="motion.demo.PlayMotionFileActivity">[Motion] Motion Play fst Example</Label>
     <Label name="motion.demo.ControlMotionActivity">[Motion] Motion Play/Pause/Resume Control Example</Label>
     <Label name="motion.demo.WindowControlWithMotionActivity">[Motion] Motion Play with window view control Example</Label>
     <Label name="motion.MotionTtsExampleActivity">[Motion] Motion with TTS Example</Label>
