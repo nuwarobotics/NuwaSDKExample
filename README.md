@@ -10,15 +10,18 @@ NuwaSDK and NuwaSDKExample allow use on every language\market.
 * Project setting : check Use legacy android.support library
 
 # `Nuwa SDK`
-Newest Nuwa SDK：2.1.0.08
+Newest Nuwa SDK：2.1.1.00
 
 # `Support Robot Product`
 Robot Generation 1 
-* Kebbi(凱比) : Taiwan
+* Kebbi(凱比) : WorldWide
 * Danny(小丹) : China
 
-Robot Generation 2
+Robot Generation 2 - 2018
 * Kebbi Air : Taiwan、China、Japan
+
+Robot Generation 3 - 2026
+* Kebbi 3 (2026 Kebbi) : WorldWide
 
 # `TTS Capability`
 The TTS language capability is difference between each market robot software.
